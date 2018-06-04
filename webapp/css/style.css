@@ -1,0 +1,24 @@
+.titleBgColor {
+    background-color: black !important;
+}
+
+.ABCsmall {
+    font-size: 2rem !important;
+}
+
+.ABCmedium {
+    font-size: 2rem !important;
+}
+
+.ABCred {
+    font-size: 3rem !important;
+    color: #FF3300 !important;
+}
+
+.sapMShellBrandingBar {
+    height: 0px;
+}
+
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}

@@ -1,0 +1,90 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" controllerName="z.ZOUTLETARTICLE.controller.View1" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}" enableScrolling="false">
+				<content>
+					<Image id="background" visible="true" densityAware="true"/>
+					<l:Grid id="_vbox1" class="sapUiSmallMarginTop" defaultSpan="L6 M6 S6" containerQuery="true">
+						<l:content>
+							<FlexBox id="imgBox" width="40%" justifyContent="Center" class="sapUiTinyMargin"/>
+							<!--<Image id="productimage" width="80%"/>-->
+							<VBox class="sapUiSmallMargin">
+								<Label id="description" class="ABCsmall"/>
+								<Label/>
+								<Label/>
+								<Label/>
+								<Label id="priceoutlet" class="ABCred" design="Bold"/>
+								<Label/>
+								<Label/>
+								<Label/>
+								<Label/>
+								<Label id="pricevat" class="ABCmedium"/>
+							</VBox>
+						</l:content>
+					</l:Grid>
+					<!--<VBox id="_vbox1" visible="false" class="sapUiLargeMargin">-->
+					<!--	<HBox id="_hbox2" alignItems="Center" height="40%">-->
+					<!--		<VBox id="_vbox2" width="40%">-->
+					<!--			<Image id="productimage" width="60%"-->
+					<!--				src="http://www.planetparfum.com/dw/image/v2/AATN_PRD/on/demandware.static/-/Sites-master-catalog-pp/default/dwecc8efac/zoom/20034670_M.jpg"/>-->
+					<!--		</VBox>-->
+					<!--		<VBox id="_vbox3">-->
+					<!--			<HBox id="_hbox3" height="50%">-->
+					<!--				<Label id="priceoutlet" class="ABCmedium"/>-->
+					<!--			</HBox>-->
+					<!--			<HBox id="_hbox4" height="50%">-->
+					<!--				<Label id="pricevat" class="ABCbig"/>-->
+					<!--			</HBox>-->
+					<!--		</VBox>-->
+					<!--	</HBox>-->
+					<!--</VBox>-->
+					<!--<f:Form id="_vbox1" editable="false" visible="false">
+						<f:layout>
+							<f:ResponsiveGridLayout labelSpanXL="6" labelSpanL="6" labelSpanM="6" labelSpanS="6" emptySpanXL="0" emptySpanL="0" emptySpanM="0"
+								emptySpanS="0" columnsXL="6" columnsL="6" columnsM="6" singleContainerFullSize="false"/>
+							<f:GridLayout></f:GridLayout>
+						</f:layout>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<Image id="productimage" width="100%"/>
+								</f:FormElement>
+							</f:formElements>
+							<f:layoutData>
+								<f:GridContainerData halfGrid="true"></f:GridContainerData>
+							</f:layoutData>
+						</f:FormContainer>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<f:fields>
+										<Label id="priceoutlet" class="ABCmedium"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:fields>
+										<Label id="pricevat" class="ABCbig"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+							<f:layoutData>
+								<f:GridContainerData halfGrid="true"></f:GridContainerData>
+							</f:layoutData>
+						</f:FormContainer>
+					</f:Form>-->
+				</content>
+				<customHeader>
+					<Toolbar width="100%" id="__toolbar1" class="titleBgColor" binding="{GETPLANT>/S_T001WSet(Type='')}">
+						<content>
+							<!--<core:Icon src="sap-icon://home" size="2em" id="__icon0"/>-->
+							<Label design="Bold" text="{GETPLANT>EPlant} {GETPLANT&gt;ET001w/Name1}"/>
+							<Image id="imagepp"/>
+							<SearchField id="eanSearch" placeholder="{i18n>eansearch}" search="searchEAN" width="30%"/>
+						</content>
+					</Toolbar>
+				</customHeader>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
